@@ -1,7 +1,5 @@
 # How to setup the test automation framework for the LifeWorks demo
 
-[Important. Please read me first!](./IMPORTANT.md)
-
 ## Installing Oracle VM VirtualBox on your Windows 7/8/10 machine:
 
 http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe
@@ -78,6 +76,8 @@ Ensure you have guest additions installed; by downloading the following iso and 
 http://download.virtualbox.org/virtualbox/5.1.26/VBoxGuestAdditions_5.1.26.iso
 
 ## Running and modifying the tests:
+
+[Important. Please read me first!](./IMPORTANT.md)
 
 Each test is run using the following command:
 
