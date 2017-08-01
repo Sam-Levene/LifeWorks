@@ -1,4 +1,4 @@
-# How To Start Writing Test Automation in Ruby
+# How to setup the test automation framework for the LifeWorks demo
 
 ## Installing Oracle VM VirtualBox on your Windows 7/8/10 machine:
 
@@ -58,7 +58,7 @@ Either one works.
 
 ## Setting up the environment:
 
-Finally we can get starrted with the setup; by installing our first Ruby Gems; add-ons that will allow us to work the Cucumber framework by typing the following:
+Finally we can get started with the setup; by installing our first Ruby Gems; add-ons that will allow us to work the Cucumber framework by typing the following:
 
 `gem install bundler`
 
@@ -77,10 +77,10 @@ http://download.virtualbox.org/virtualbox/5.1.26/VBoxGuestAdditions_5.1.26.iso
 
 ## Running and modifying the tests:
 
-Finally, we've gotten to the part you've been waiting for, running and modifying the tests; First: take a read through the cucumber book provided in this repository, this is the font of all things cucumber and should be your go-to guide for how to write cucumber-based frameworks in Ruby. Each test is run using the following command:
+Each test is run using the following command:
 
 `cucumber`
 
-OR, if you use tags (@tagName)
+OR, by using tags (@tagName), we can specify which tests we want to run.
 
 `cucumber --tags @tagName`
