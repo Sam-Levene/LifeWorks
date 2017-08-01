@@ -9,7 +9,14 @@ class Pages::Quidcojoin < SitePrism::Page
 		fill_in('new_email', :with => 'joeb9605@gmail.com')
 		fill_in('new_password', :with => 'examplepass')
 		find(:xpath, "//*[@id=\"agree_to_terms_label\"]").click
-		find(:xpath, "//*[@id=\"agree_to_offers_label\"]").click
+		click_button('Join Quidco free')
+	end
+
+	def invalid_fill_form
+		fill_in('first_name', :with => '')
+		fill_in('last_name', :with => '')
+		fill_in('new_email', :with => '')
+		fill_in('new_password', :with => '')
 		click_button('Join Quidco free')
 	end
 

@@ -9,4 +9,10 @@ class Pages::Quidcosignin < SitePrism::Page
 		click_button('Sign in')
 	end
 
+	def invalid_fill_form
+		fill_in('username', :with => '')
+		fill_in('password', :with => '')
+		click_button('Sign in')
+	end
+
 end

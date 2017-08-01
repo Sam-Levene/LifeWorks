@@ -14,7 +14,17 @@ class Pages::Googlemailhomepage < SitePrism::Page
   	# find('#next').click
   end
 
+  def do_not_verify_credentials
+  	fill_in('identifier', :with => "")
+    find('#identifierNext').click
+  end
+
   def validate_confirmation_email
+
+  end
+  
+  def do_not_validate_confirmation_email
+  	
   end
 
 end

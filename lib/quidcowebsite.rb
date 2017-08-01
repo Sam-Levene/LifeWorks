@@ -15,4 +15,8 @@ class Quidcowebsite
 	def quidco_sign_in
 		Pages::Quidcosignin.new
 	end
+
+	def quidco_argos_page
+		Pages::Quidcoargos.new
+	end
 end
