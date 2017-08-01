@@ -1,0 +1,24 @@
+class Pages::Quidcojoin < SitePrism::Page
+
+	set_url "https://www.quidco.com/join-quidco/"
+	set_url_matcher /quidco.com/
+
+	def fill_form
+		fill_in('first_name', :with => 'Joe')
+		fill_in('last_name', :with => 'Bloggs')
+		fill_in('new_email', :with => 'joeb9605@gmail.com')
+		fill_in('new_password', :with => 'examplepass')
+		find(:xpath, "//*[@id=\"agree_to_terms_label\"]").click
+		find(:xpath, "//*[@id=\"agree_to_offers_label\"]").click
+		click_button('Join Quidco free')
+	end
+
+	def onboarding
+		click_link("Let's get started")
+		find(:xpath, "//*[@id=\"basic-vs-premium\"]/div[1]/div[2]/div").click
+		click_link("Next step")
+		click_link("Skip step")
+		click_link("Skip step")
+		click_link("Finish")
+	end
+end
