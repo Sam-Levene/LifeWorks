@@ -76,7 +76,7 @@ Feature: Access the QuidCo website
 		When I search for "Argos" 
 		And I navigate to Argos Credit Card details page
 		And I save the Stats section to a file
-		Then a file will not be created for me
+		Then a file will be created for me
 
 	@LifeWorks_Scenario_13 @Unhappy
 	Scenario: As a logged-in user, I want to save statistics of a card.

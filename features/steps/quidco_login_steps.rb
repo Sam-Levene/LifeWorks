@@ -57,17 +57,17 @@ Then(/^I will not be logged in to the QuidCo scheme$/) do
 end
 
 When(/^I click on the Logout button$/) do
-	pending # Write code here that turns the phrase above into concrete actions
+	@quidco_website.my_quidco.click_logout
 end
 
 Then(/^I am logged out of the Quidco scheme$/) do
-	pending # Write code here that turns the phrase above into concrete actions
+	@quidco_website.my_quidco.sign_out
 end
 
 When(/^I do not click on the Logout button$/) do
-	pending # Write code here that turns the phrase above into concrete actions
+	@quidco_website.my_quidco.do_not_click
 end
 
 Then(/^I am not logged out of the Quidco scheme$/) do
-	pending # Write code here that turns the phrase above into concrete actions
+	@quidco_website.my_quidco.sign_out_invalid
 end

@@ -32,7 +32,7 @@ When(/^I do not navigate to Argos Credit Card details page$/) do
 end
 
 Then(/^I will not see the statistics$/) do
-  
+  @quidco_website.my_quidco.do_not_click
 end
 
 When(/^I save the Stats section to a file$/) do
@@ -40,7 +40,7 @@ When(/^I save the Stats section to a file$/) do
 end
 
 Then(/^a file will be created for me$/) do
-	pending # Write code here that turns the phrase above into concrete actions
+	@quidco_website.quidco_argos_page.check_file_exists
 end
 
 When(/^I do not save the Stats section to a file$/) do
@@ -48,5 +48,5 @@ When(/^I do not save the Stats section to a file$/) do
 end
 
 Then(/^a file will not be created for me$/) do
-	pending # Write code here that turns the phrase above into concrete actions
+	@quidco_website.quidco_argos_page.check_file_does_not_exist
 end
